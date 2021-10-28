@@ -1,6 +1,8 @@
-package pl.janik.credit;
+package pl.janik;
 
 import org.junit.jupiter.api.Test;
+import pl.janik.greetings.Greeter;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class GreetingTest {
