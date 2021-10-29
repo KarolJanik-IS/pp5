@@ -1,4 +1,4 @@
-package pl.janik.credit;
+package pl.janik.greetings;
 
 public class Greeter {
     public String hello(String name) {
