@@ -5,9 +5,9 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.math.BigDecimal;
 import java.util.UUID;
 
-public class BlaTest {
+public class CardModuleTest {
 
-    private CardDatabase cardDatabase;
+    private InMemoryHashMapCardDatabase cardDatabase;
 
     @Test
     public void itHandleMultipleCardWithdraws() {
@@ -26,7 +26,7 @@ public class BlaTest {
     }
 
     private void thereIsCreditCardDatabase() {
-        this.cardDatabase = new CardDatabase();
+        this.cardDatabase = new InMemoryHashMapCardDatabase();
     }
 
     private void cardBalanceEquals(String cardNumber, BigDecimal expectedBalance) {

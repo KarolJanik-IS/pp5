@@ -5,17 +5,19 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class CardDatabase {
+public class InMemoryHashMapCardDatabase implements CardDatabase {
     Map<String, CreditCard> cards;
 
-    public CardDatabase() {
+    public InMemoryHashMapCardDatabase() {
         this.cards = new ConcurrentHashMap<>();
     }
 
+    @Override
     public void save(CreditCard card) {
         cards.put(card.getNumber(), card);
     }
 
+    @Override
     public Optional<CreditCard> loadByNumber(String cardNumber) {
         return Optional.ofNullable(cards.get(cardNumber));
     }

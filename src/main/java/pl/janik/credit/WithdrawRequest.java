@@ -2,11 +2,11 @@ package pl.janik.credit;
 
 import java.math.BigDecimal;
 
-public class withdrawRequest {
+public class WithdrawRequest {
     private final String number;
     private final BigDecimal money;
 
-    public withdrawRequest(String number, BigDecimal money) {
+    public WithdrawRequest(String number, BigDecimal money) {
         this.number = number;
         this.money = money;
     }

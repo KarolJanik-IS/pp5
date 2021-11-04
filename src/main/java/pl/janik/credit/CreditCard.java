@@ -40,4 +40,8 @@ public class CreditCard {
     public BigDecimal getBalance() {
         return balance;
     }
+
+    public String getNumber() {
+        return cardNumber;
+    }
 }

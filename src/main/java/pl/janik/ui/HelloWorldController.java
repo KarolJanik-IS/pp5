@@ -19,7 +19,7 @@ public class HelloWorldController {
         return "Hello World";
     }
 
-    @RequestMapping("/cards")
+    @RequestMapping("/:w")
     public List<String> cards(){
         return cardApi.cards();
     }
